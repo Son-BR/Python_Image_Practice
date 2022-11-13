@@ -1,0 +1,14 @@
+dst = cv2.seamlessClone(src, dst, mask, coords, flags)
+
+src = 입력 영상 (전경)
+
+dst = 대상 영상 (배경)
+
+mask = 마스크 (src에서 합성하고자 하는 영역은 255, 나머지는 0)
+
+coodrs = src가 놓여지기 원하는 dst 좌표(중앙)
+
+flags = 합성 방식(NORMAL_CLONE, MIXED_CLONE)
+
+dst = 합성 경과
+[출처] OpenCV 프로젝트 : 4.4 - 이미지 연산 (2)|작성자 용쓰
